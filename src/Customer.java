@@ -3,16 +3,18 @@ public class Customer {
     private String name;
     private String email;
     private String phoneNumber;
+    private String address;
 
     // Constructors
     public Customer() {
     }
 
-    public Customer(int id, String name, String email, String phoneNumber) {
+    public Customer(int id, String name, String email, String phoneNumber, String address) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
+        this.address = address;
     }
 
     // Getters and setters
@@ -46,5 +48,12 @@ public class Customer {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
     }
 }
