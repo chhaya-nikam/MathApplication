@@ -3,9 +3,11 @@ public class Customer {
     private String name;
     private String email;
     private String phoneNumber;
+    private int age;
 
     // Constructors
-    public Customer() {}
+    public Customer() {
+    }
 
     public Customer(int id, String name, String email, String phoneNumber) {
         this.id = id;
